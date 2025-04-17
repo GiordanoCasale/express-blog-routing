@@ -12,7 +12,7 @@ app.use(express.static("public"));
 
 //definizione della rotta base
 app.get("/", (req, res) => {
-    res.send("Benvenuti nel mio blog");
+    res.send("I miei post");
 })
 
 //inserimento del metodo che lascia in ascolto il nostro server
