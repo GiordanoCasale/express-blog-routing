@@ -7,6 +7,12 @@ const app = express();
 //definizione del numero di porta
 const port = 3000;
 
+//importo il router in una variabile
+const postsRouter = require("./router/posts.js");
+
+//vado ad utilizzare postsRouter per creare effettivamnte le rotte
+app.use("/posts", postsRouter )
+
 //impostazione dello strumento per recuperare gli asset statici
 app.use(express.static("public"));
 
